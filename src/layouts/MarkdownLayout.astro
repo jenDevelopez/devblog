@@ -1,0 +1,14 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const {frontmatter} = Astro.props
+const {title, image,} = frontmatter
+---
+<BaseLayout footerClass="fixed bottom-0" mainClass="h-screen lg:w-2/3 lg:mx-auto dark:text-white p-4" title={title}>
+  <div>
+    <img src={image} alt={`${title} image`}>
+  </div>
+  <h1 class="text-2xl text-center font-bold my-2">{title}</h1>
+  <div>
+    <slot />
+  </div>
+</BaseLayout>

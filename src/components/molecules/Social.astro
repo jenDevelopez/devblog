@@ -1,0 +1,24 @@
+---
+import IconSocial from "../atoms/IconSocial.astro";
+const social = [
+  {
+    link: 'https://github.com/jenDevelopez',
+    image: {
+      src:'/github.svg',
+      alt:'Icono github'
+    }
+  },
+  {
+    link: 'www.linkedin.com/in/jendevelopez',
+    image: {
+      src:'/linkedin.svg',
+      alt:'Icono Linkedin'
+    }
+  }
+]
+---
+<div class="flex justify-center gap-4 items-center">
+  {social.map((icon) => (
+    <IconSocial link={icon.link} image={icon.image}/>
+  ))}
+</div>

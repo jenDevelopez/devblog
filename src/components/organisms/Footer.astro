@@ -1,0 +1,11 @@
+---
+import Social from "../molecules/Social.astro";
+const date = new Date()
+const year = date.getFullYear()
+const {aditionalClass} = Astro.props
+---
+<footer class={`${aditionalClass} mt-4 w-full bg-yellow-300 flex flex-col justify-between items-center p-4 lg:flex-row`}>
+  <Social />
+  <p>&copy; {year} Jennifer Lopez </p>
+  <a class="text-lg font-semibold hover:text-purple-700" href="">Visita mi portfolio</a>
+</footer>

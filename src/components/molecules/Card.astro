@@ -1,0 +1,14 @@
+---
+
+const {link,title,titleSize,image} = Astro.props 
+const algo = ''
+---
+
+<a href={link} class="w-full h-auto p-2 bg-gradient-to-b from-slate-500 to-gray-400 dark:bg-gradient-to-b dark:from-purple-950 dark:to-blue-800 border rounded-lg shadow-md shadow-gray-700 dark:shadow-gray-500 hover:opacity-70">
+	<div class="flex flex-col justify-between">
+		<div class=""><img class="w-full h-auto" src={image} alt="post image"></div>
+		<h2 class={`mb-2 ${titleSize} font-bold tracking-tight text-gray-900 dark:text-white`}>{title}</h2>
+	</div>
+
+
+</a>

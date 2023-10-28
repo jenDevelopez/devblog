@@ -1,0 +1,11 @@
+---
+import ButtonTheme from "../atoms/buttonTheme.astro";
+import NavBar from "../molecules/NavBar.astro";
+
+---
+
+
+<header class="shadow-md dark:shadow-gray-500">
+  <NavBar />
+  <slot name="after-header" />
+</header>

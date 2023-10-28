@@ -1,0 +1,17 @@
+---
+
+import Logo from '../atoms/Logo.astro'
+import Nav from '../atoms/Nav.astro';
+import ButtonTheme from '../atoms/buttonTheme.astro';
+const image = {
+  url:'/public/logo.svg',
+  alt:'logo'
+}
+
+---
+
+<div class="h-16 flex justify-between items-center px-2 lg:w-2/3 lg:mx-auto">
+  <Logo className='bg-text-500' url={image.url} alt={image.alt}/>
+  <Nav />
+  <ButtonTheme />
+</div>
