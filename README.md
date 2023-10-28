@@ -9,4 +9,4 @@ Devblog es un blog de desarrollo en el que voy resumiendo mis proyectos realizad
 - Tailwind
 - Typescript
 
-![Mockup de la aplicación]('/public/screenshots/responsive.png')
+![Mockup de la aplicación]('./public/screenshots/responsive.png')
