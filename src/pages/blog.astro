@@ -6,7 +6,7 @@ import PostsLayout from '../layouts/PostsLayout.astro';
 
 ---
 
-<BaseLayout title="Welcome to Astro." mainClass='' footerClass=''>
+<BaseLayout title="Devblog | Todos los posts" mainClass='' footerClass=''>
 	<PostsLayout>
 		{allPosts.map((post) => (
 			<Card title={post.frontmatter.title} link={post.url} image={post.frontmatter.image} titleSize="text-2xl"/>
